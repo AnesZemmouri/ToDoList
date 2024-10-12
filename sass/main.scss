@@ -1,0 +1,12 @@
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+
+$custom-theme-colors: (
+  "beige": #f0ebe3,
+  "gray": #4a4947,
+  "bleuclar": #87a2ff,
+); // Added semicolon and removed trailing comma
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+// Importing Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
